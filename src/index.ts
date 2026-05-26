@@ -15,7 +15,7 @@ const program = new Command();
 program
   .name('ai-md')
   .description('Generate CLAUDE.md, GEMINI.md, or SKILL.md files using AI.')
-  .version('0.1.0')
+  .version('0.2.0')
   .option('-d, --dry-run', 'Preview the generated markdown without saving to a file');
 
 async function getSuggestions(context: string, currentQuestion: string) {

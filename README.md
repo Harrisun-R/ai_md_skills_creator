@@ -4,7 +4,18 @@ A concise, AI-powered CLI tool to generate `CLAUDE.md`, `GEMINI.md`, and `SKILL.
 
 ## Features
 
-- **Auto-Context Detection:** Automatically detects project name and dependencies from `package.json` to pre-fill information.
+- **Multi-Language Auto-Detection:** Automatically detects project name and dependencies for 11+ ecosystems:
+  - **Node.js** (`package.json`)
+  - **Python** (`pyproject.toml`, `requirements.txt`)
+  - **Rust** (`Cargo.toml`)
+  - **Go** (`go.mod`)
+  - **Ruby** (`Gemfile`)
+  - **PHP** (`composer.json`)
+  - **Java/Kotlin** (`pom.xml`, `build.gradle`)
+  - **Flutter/Dart** (`pubspec.yaml`)
+  - **.NET** (`.csproj`)
+  - **Swift** (`Package.swift`)
+  - **C++** (`CMakeLists.txt`)
 - **Dynamic Suggestions:** Asks context-aware questions and provides AI-driven suggestions.
 - **LLM Agnostic:** Works with OpenAI, Anthropic, Google Gemini, and local LLMs (via Ollama or custom OpenAI-compatible endpoints).
 - **Concise Output:** Generates lean markdown files to save context window and tokens.
